@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quotes by Authors</title>
+</head>
+<body>
+
+<h1>...</h1>
+
+<button onclick="showQuote(1)">Ч. Айтматов</button>
+<button onclick="showQuote(2)">П. Гольбах</button>
+<button onclick="showQuote(3)">Т. Шевченко</button>
+<button onclick="showQuote(4)">Д. Павличко</button>
+<button onclick="showQuote(5)">Л. Костенко</button>
+
+<script>
+    function showQuote(authorNumber) {
+        let quote = '';
+        switch (authorNumber) {
+            case 1:
+                quote = '“Той, хто в біді кидає свій народ, стає його ворогом.” - Ч. Айтматов';
+                break;
+            case 2:
+                quote = '“Де немає свободи, там немає і вітчизни.” - П. Гольбах';
+                break;
+            case 3:
+                quote = '“В своїй хаті своя й правда, І сила, і воля.” - Т. Шевченко';
+                break;
+            case 4:
+                quote = '“Вітчизна — ось і альфа, і омега!” - Д. Павличко';
+                break;
+            case 5:
+                quote = '“Нації вмирають не від інфаркту. Спочатку їм відбирає мову.” - Л. Костенко';
+                break;
+            default:
+                quote = 'Unknown author';
+        }
+        alert(quote);
+    }
+</script>
+
+</body>
+</html>
